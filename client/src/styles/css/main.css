@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../../assets/bg-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.background {
+  background: #fff;
+  margin: 30px auto;
+  padding: 20px 0;
+  width: 80%;
+  border-radius: 8px;
+}
+.background .text-signIn {
+  font-size: 2em;
+  font-weight: 500;
+  color: #3d3c3c;
+  opacity: 0.9;
+  text-align: center;
+  margin: 40px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.background .container {
+  width: 80%;
+  margin: auto;
+}
+.background .container .btnGrup {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.background .container .btnGrup .googleBtn:first-child {
+  background: #2e609c;
+  color: #fff;
+}
+.background .container .btnGrup button {
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #525151;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  background: #fff;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.background .container .formGrupLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .container .formGrupLogin .username {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .container .formGrupLogin .username span {
+  color: red;
+}
+.background .container .formGrupLogin .username label {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #525151;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.background .container .formGrupLogin .username .formUserLogin {
+  padding: 16px 20px;
+  background: #F7F7F7;
+  border: 2px solid #ebebeb;
+  transition: 0.3s all ease;
+  border-radius: 5px;
+  font-size: 1.3em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.background .container .formGrupLogin .username .formUserLogin:focus {
+  outline: none;
+  border: 2px solid #c40e8d;
+}
+.background .container .formGrupLogin .password {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .container .formGrupLogin .password span {
+  color: red;
+}
+.background .container .formGrupLogin .password label {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #525151;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.background .container .formGrupLogin .password .formUserLogin {
+  padding: 16px 20px;
+  background: #F7F7F7;
+  border: 2px solid #ebebeb;
+  transition: 0.3s all ease;
+  border-radius: 5px;
+  font-size: 1.3em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.background .container .formGrupLogin .password .formUserLogin:focus {
+  outline: none;
+  border: 2px solid #c40e8d;
+}
+.background .container .formGrupLogin .submitBtn {
+  padding: 20px 18px;
+  font-size: 1.2em;
+  background: #313030;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .text-signIn {
+    font-size: 2.8em;
+  }
+  .background {
+    width: 60%;
+  }
+  .background .container {
+    width: 60%;
+  }
+  .background .container .btnGrup {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
