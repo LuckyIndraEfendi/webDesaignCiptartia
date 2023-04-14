@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { Dashboard, Login, Register } from './pages'
-import './styles/css/main.css'
+// import './styles/css/main.css'
 import { auth } from './config/firebase/firebaseConfig'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { HashLoader } from 'react-spinners'
@@ -31,7 +31,7 @@ function App() {
   if (isLoading) {
     return (
       <div className="" style={{ background: '#2b2f2e' }}>
-        <HashLoader color="#36d7b7" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />
+        <HashLoader size="70px" color="#36d7b7" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />
         <h5 style={{ color: '#fff', fontFamily: 'system-ui' }}>Loading ...</h5>
       </div>
     )

@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom'
-import googleLogo from "../assets/icons/icon-google.png"
-import facebook from "../assets/icons/fb.png"
+import { AiOutlineGooglePlus } from "react-icons/ai"
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../config/firebase/firebaseConfig';
+import { AiOutlineSearch } from "react-icons/ai"
+import "./App.css"
 import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import swal from 'sweetalert';
 function Login() {
@@ -56,30 +57,37 @@ function Login() {
     }
 
     return (
-        <div className='background'>
-            <h1 className='text-signIn'>Sign In With</h1>
-            <div className="container">
-                <div className="containerForm">
-                    <div className="btnGrup">
-                        <button className='googleBtn'><img src={facebook} alt="" width='30px' /> <span>FaceBook</span></button>
-                        <button className='googleBtn' onClick={handleGoogleLogin}><img src={googleLogo} alt="" /> <span>Google</span></button>
+        <>
+            <div className="background"></div>
+
+            <div className="containerForm">
+                <div className="textField">
+                    <h1>Login</h1>
+                </div>
+                <form action="/" className='myForm' onSubmit={handleSubmit}>
+                    <div className="email">
+                        <label htmlFor="email">Email</label>
+                        <input type="email" placeholder='Username' required onChange={(e) => setEmail(e.target.value)} ref={emails} />
                     </div>
-                    <form className="formGrupLogin" onSubmit={handleSubmit}>
-                        <div className="username">
-                            <label htmlFor="Username">Email <span>*</span></label>
-                            <input type="email" className='formUserLogin' id='Username' onChange={(e) => setEmail(e.target.value)} ref={emails} required />
-                        </div>
-                        <div className="password">
-                            <label htmlFor="password">Password <span>*</span></label>
-                            <input type="text" className='formUserLogin' required id='password' onChange={(e) => setPassword(e.target.value)} ref={passwords} />
-                        </div>
-                        <button className='submitBtn'>Sign In</button>
-                        <p style={{ fontFamily: 'system-ui' }}>Don't have account? <Link to="/register">Register</Link></p>
-                    </form>
+                    <div className="password">
+                        <label htmlFor="password">Password</label>
+                        <input type="password" placeholder='Password' required onChange={(e) => setPassword(e.target.value)} ref={passwords} />
+                    </div>
+
+                    <button type='submit' className='submit'>Login</button>
+                </form>
+                <p className='smallInfo'>Don't have Account ? <Link to='/register' style={{ color: "#1c0ee2", textDecoration: "none" }}>Sign Up</Link></p>
+
+                {/* <h5 className="fastLogin">Login Fast With</h5> */}
+                <div className="googleLogin" onClick={handleGoogleLogin}>
+                    <AiOutlineGooglePlus size={30} />
+                    <p>Sign in with Google</p>
                 </div>
             </div>
-        </div>
+        </>
     );
-};
+
+}
+
 
 export default Login;
