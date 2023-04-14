@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "sart-sass": "sass --watch src/styles/scss/main.scss  src/styles/css/main.css",
+    "start-sass": "sass --watch src/styles/scss/main.scss  src/styles/css/main.css",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -13,6 +13,7 @@
     "firebase": "^9.19.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
     "react-spinners": "^0.13.8",
     "sweetalert": "^2.1.2"

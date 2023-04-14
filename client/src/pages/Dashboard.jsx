@@ -21,11 +21,11 @@ const Dashboard = () => {
         })
     }
     return (
-        <div>
+        <>
             <img src={user ? user.photoURL : 'no user'} alt="" />
             <h1>{user ? user.email : 'no user'}</h1>
             <button onClick={handleLogout}>Logout</button>
-        </div>
+        </>
     );
 };
 
