@@ -1,0 +1,120 @@
+:root{
+    --PrimaryColor: hsl(199, 100%, 40%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right,rgb(5, 171, 232),hsl(199, 100%,33%));
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%, 36%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 240);
+    --cardBG: rgb(255, 255, 235);
+}
+
+.home{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-weight: 400;
+
+    .overlay{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.735);
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        mix-blend-mode: hard-light;
+    }
+
+    video{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+    }
+
+    .homeContent{
+        width: 100%;
+        height: max-content;
+        padding: 8rem 1.5rem 3rem;
+        display: flex;
+        row-gap: 3rem;
+        // flex-wrap: wrap;
+        // flex-direction: c-reverse;
+        // align-items: stretch;
+        justify-content: center;
+        color: var(--whiteColor);
+        z-index: 100;
+
+        label{
+            color: var(--textColor);
+        }
+
+        .textDiv{
+            // width: 60%;
+            padding: 2rem 0;
+
+            .smallText{
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            .homeTitle{
+                // width: 70%;
+                position: relative;
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+            p{
+                margin-top: 1rem;
+            }
+            button{
+                margin-top: 1rem;
+                a{
+                    color: var(--whiteColor);
+
+                }
+                &:hover{
+                    background: var(--PrimaryColor);
+                }
+                
+            }
+        }
+        .cardDiv{
+            // width: 100%;
+            position: relative;
+            padding: 2rem 1rem;
+            // background: var(--whiteColor); 
+            border-radius: 10px;
+            gap: 1rem;
+            
+
+
+        }
+
+
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .textDiv{
+        .homeTitle{
+            width: 60%;
+        }
+
+        p{
+            width: 60%;
+        }
+    }
+}
+

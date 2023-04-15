@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { Dashboard, Login, Register } from './pages'
 import './styles/css/main.css'
+import './App.css'
 import { auth } from './config/firebase/firebaseConfig'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { HashLoader } from 'react-spinners'
@@ -38,7 +39,6 @@ function App() {
   }
   return (
     <>
-
       {isLogin ? (
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
