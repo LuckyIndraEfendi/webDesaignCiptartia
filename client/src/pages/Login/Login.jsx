@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom'
 import { AiOutlineGooglePlus } from "react-icons/ai"
 import { useNavigate } from 'react-router-dom';
-import { auth } from '../config/firebase/firebaseConfig';
+import { auth } from '../../config/firebase/firebaseConfig';
 import { AiOutlineSearch } from "react-icons/ai"
 import "./App.css"
 import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
