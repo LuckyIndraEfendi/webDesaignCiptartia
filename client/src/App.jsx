@@ -49,7 +49,6 @@ function App() {
       {isLogin ? (
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
-          {/* <Route path="/details" element={<h1>Hello</h1>} /> */}
         </Routes>
       ) : (
         <Routes>
