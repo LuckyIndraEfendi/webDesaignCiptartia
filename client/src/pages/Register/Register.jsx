@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineGooglePlus } from "react-icons/ai"
 import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
-import { auth } from "../config/firebase/firebaseConfig";
+import { auth } from "../../config/firebase/firebaseConfig";
 import swal from 'sweetalert';
 function Register() {
     const navigate = useNavigate();

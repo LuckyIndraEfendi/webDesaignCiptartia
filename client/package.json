@@ -7,10 +7,13 @@
     "dev": "vite",
     "start-sass": "sass --watch src/styles/scss/main.scss  src/styles/css/main.css",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tailwindcss": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "dependencies": {
     "firebase": "^9.19.1",
+    "flowbite": "^1.6.5",
+    "framer-motion": "^10.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
@@ -23,6 +26,7 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "@vitejs/plugin-react-refresh": "^1.3.6",
+    "tailwindcss": "^3.3.1",
     "vite": "^4.2.0"
   }
 }
