@@ -2,16 +2,14 @@
 
 Ini adalah repository untuk proyek perlombaan I/O Fest yang diadakan oleh Badan Eksekutif Mahasiswa Teknologi Informasi Universitas Tarumanegara. 
 
-tess
-
 **Ciptartia** sebuah nama brand yang terdiri dari dua kata, yaitu "Cipta" dan "Artia". "Cipta" berasal dari bahasa Indonesia yang berarti menciptakan atau membuat, sedangkan "Artia" adalah gabungan dari kata "Art" dan "Ia". "Art" mengacu pada seni dan kreativitas, sedangkan "Ia" menekankan pada keberadaan individu sebagai kreator karya seni. Dengan demikian, "Ciptartia" mengandung makna menciptakan karya seni dan kreativitas dengan menghargai peran individu sebagai kreatornya. Nama ini mudah diingat karena singkat, memiliki pengucapan yang jelas, dan mengandung makna yang relevan dengan tema "Evolving Creativity with Tech".
 
 ## Teknologi yang Digunakan
 
 - React.JS
 - Node.JS
-- MySQL
-- NPM
+- MongoDB
+- Express
 
 ## Cara Menggunakan Proyek Ini
 
